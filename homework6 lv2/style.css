@@ -1,0 +1,84 @@
+.bigBox{
+   text-align: center;
+}
+.topic{
+    display: inline-block;
+    text-align: left;
+    width: 80%;
+    height: auto;
+    background-color: rgb(244, 248, 255);
+    font-size: larger;
+}
+
+.commentArea{
+    display: inline-block;
+    border-top: 1px solid gainsboro;
+    width: 90%;
+    margin-top: 20px;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+img{
+    margin-top: 30px;
+    border-radius: 50%;
+    width: 70px;
+    vertical-align: top;
+}
+input{
+    width: 60%;
+    vertical-align: top;
+    margin-top: 41px;
+    margin-left: 10px;
+    height: 50px;
+    border-radius: 8px;
+}
+
+.post{
+    margin-top: 43px;
+    margin-left: 5px;
+    height: 50px;
+    width: 70px;
+    font-size: larger;
+    background-color: rgb(198, 225, 255);
+    border-radius: 6px;
+}
+.comments{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    
+}
+.comment{
+    text-align: left;
+    width: 60%;
+    position:  relative;
+    border: 1px solid rgb(154, 154, 154);
+    border-radius: 6px;
+    box-shadow: 6px 5px 5ox gainsboro;
+    padding: 30px 20px;
+}
+.name{
+    margin: 0;
+    margin-left: 5px;
+    color: rgb(82, 93, 125);
+    font-size: large;
+}
+.content{
+    margin: 0;
+    text-align: left;
+    margin-left: 5px;
+    font-size: large;
+}
+.time{
+    margin: 0;
+    text-align: right;
+}
+.del{
+    position: absolute;
+   right: 20px;
+   border: 0cap;
+   color: rgb(130, 136, 141);
+}
