@@ -1,0 +1,862 @@
+.page{
+    position: relative;
+    background-color: #f7f9fc;
+    width: 1581px;
+    height: 1124px;
+    border: 2px solid #bdbdbd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+/*左侧导航栏的样式*/
+.leftPart{
+    width:300px;
+    height:1124px;
+    background-color: #f0f3f6;
+    background-image: url(imgs/logo.png);
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position: 50px 30px;
+    padding-top: 134px;
+}
+.sideBar{
+   display: flex;
+   flex-direction: column;
+   overflow: scroll y;
+}
+.mainMenu{
+   height: 312px;
+   padding-left: 33px;
+   padding-right: 25px;
+   border-bottom: 1px solid #e4e8ec;
+   
+}
+.mine{
+    height: 317px;
+    padding-top: 83px;
+    padding-left: 33px;
+    padding-right: 25px;
+    border-bottom: 1px solid #e4e8ec;
+    background-image: url(imgs/mine.png);
+    background-size: 36px;
+    background-position: 50px 40px;
+    background-repeat: no-repeat;
+}
+
+
+a{
+    display: block;
+    height: 54px;
+    border: none;
+    border-radius: 10px;
+    line-height: 54px;
+    font-weight: 325;
+    font-size: 22px;
+    color: #50596b;
+    margin-bottom: 3px;
+    background-repeat: no-repeat;
+    background-position: 15px;
+    background-size: 24px;
+    padding-left: 54px;
+    text-decoration: none;
+    
+}
+a:hover{
+    background-color: #e4e8ec;
+}
+
+.mainMenu a.active {
+  background-color: #fc3d49;
+  color: white;
+}
+#tj{
+
+    background-image: url(imgs/home1.png);
+
+}
+#tj.active{
+    background-image: url(imgs/home2.png);
+
+}
+
+#jx{
+
+    background-image: url(imgs/album1.png);
+
+}
+#jx.active{
+    background-image: url(imgs/album2.png);
+}
+#bk{
+
+    background-image: url(imgs/podcast1.png);
+
+}
+#bk.active{
+    background-image: url(imgs/podcast2.png);
+
+}
+#my{
+
+    background-image: url(imgs/radio1.png);
+
+}
+#my.active{
+    background-image: url(imgs/radio2.png);
+
+}
+#gz{
+
+    background-image: url(imgs/chat1.png);
+
+}
+#gz.active{
+    background-color: #fc3d49;
+    background-image: url(imgs/chat2.png);
+
+}
+.mine a.active{
+      background-color: #fc3d49;
+     color: white;
+}
+#likedMusic{
+    background-image: url(imgs/heart1.png);
+}
+#likedMusic.active{
+    background-image: url(imgs/heart2.png);
+   
+}
+#recentlyPlayed{
+    background-image: url(imgs/clock1.png);
+}
+#recentlyPlayed.active{
+    background-image: url(imgs/clock2.png);
+}
+#myPodcast{
+    background-image: url(imgs/mypodcast1.png);
+}
+#myPodcast.active{
+    background-image: url(imgs/mypodcast2.png);
+}
+/*顶部导航栏的样式*/
+.Header{
+    width: 1278px;
+    height: 133px;
+    position: absolute;
+    left: 300px;
+    top: 0px;
+    display: inline-block;
+    vertical-align: top;
+}
+/*返回按钮*/
+.return{
+    width: 42px;
+    height: 54px;
+    border: 1px solid #e2e5e9;
+    border-radius: 25%;
+    margin-left: 61px;
+    margin-top: 25px;
+    background-color: #f7f9fc;
+    background-image: url(imgs/leftarrow.png);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: 8px 14px;
+    
+}
+
+
+
+/*搜索框*/
+.searchBox{
+    background: linear-gradient(to right, #eef2ff, #fff3f8);
+    box-sizing: border-box;
+    width: 387px;
+    height: 54px;
+    border-radius: 12px;
+    margin-left: 8px;
+    position: relative;
+    top: -20px;
+    border: 2px solid #e0e7fb;
+    
+    
+}
+/*听歌识曲按钮*/
+.listen{
+    margin-left: 9px;
+    margin-top: 25px;
+    width: 53px;
+    height: 55px;
+    background-color: #f6eff9;
+    border: 2px solid #f5e4e7;
+    border-radius: 25%;
+    background-image: url(imgs/Microphone.png);
+    background-repeat: no-repeat;
+    background-size: 32px;
+    background-position: 9px 10px;
+}
+/*导航栏的a标签们*/
+.Header a{
+    display: inline-block;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: 28px;
+    padding: 0%;
+    height: 45px;
+    width: 45px;
+   
+}
+.Header a:hover{
+    background-color: #f7f9fc;
+}
+/*头像*/
+#avatar{
+    margin-left: 32px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-image: url(imgs/avatar.jpg);
+    background-position: center center;
+    background-size: 42px;
+ 
+}
+/*名字*/
+#name{
+    width: 25px;
+    height: 25px;
+    color: #666d7e;
+  
+}
+#vip{
+    width: 114px;
+    height:50px ;
+    background-image: url(imgs/vip.png);
+    background-size: 120px;
+    background-position: center center;
+}
+#expand{
+    background-image: url(imgs/expand1.png);
+}
+#message{
+    background-image: url(imgs/message1.png);
+}
+#setting{
+    background-image: url(imgs/setting1.png);
+}
+#theme{
+    background-image: url(imgs/theme1.png);
+}
+#scale{
+    background-image: url(imgs/scale1.png);
+    background-size: 24px;
+    border-left: 1px solid #e2e5e9;
+    margin-left: 4px;
+}
+#free{
+    background-image: url(imgs/free1.png);
+}
+#minimizeButton{
+    background-image: url(imgs/minimization1.png);
+    background-size: 24px;
+}
+#maximizeButton{
+    background-image: url(imgs/Maximize1.png);
+    background-size: 24px;
+}
+#closeButton{
+    background-image: url(imgs/close1.png);
+    background-size: 19px;
+}
+
+
+.content{
+    position: absolute;
+    left: 300px;
+    top: 133px;
+}
+
+#rcmdPlaylists{
+    position: relative;
+    left: 60px;
+    top: 0px;
+    width: 200px;
+    height: 80px;   
+    font-size:28px;
+    font-weight: 650;
+    color: #283248;
+    background-image: url(imgs/rightarrow.png);
+    background-repeat: no-repeat;
+    background-size:  23px; ;
+    background-position: 114px 9px;
+}
+.recommendedPlaylistCard{
+   position: relative;
+    
+    width:175px ;
+    height: 241px;
+    
+
+}
+.recommendedPlaylistscontainer{
+     position: relative;
+    left: 60px;
+    top: 0px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 24px;
+}
+.rcmdPlaylistText{
+    padding-top: 10px;
+    position: absolute;
+    top: 174px;
+    height: 67px;
+    font-size: 20px;
+    color: #283248;
+    font-weight: 380;
+}
+.rcmdimg{
+    overflow: hidden;
+    width: 175px;
+    height: 175px;
+    border-radius: 15px;
+}
+.playCount{
+    position: absolute;
+    padding-left: 19px;
+    top: 10px;
+    left: 17px;
+    color: white;
+    font-weight: 600;
+    background-image: url(imgs/playcount.png);
+    background-repeat: no-repeat;
+    background-position:0px;
+    
+    background-size: 15px;
+}
+.playCountOnCover{
+    padding-left: 30px;
+    position: relative;
+    left: 130px;
+    top: 50px;
+    font-size: 21px;
+    color: rgb(255, 255, 255);
+    font-weight:600;
+    background-image: url(imgs/playcount.png);
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: 10px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#recommendedActivities{
+    position: relative;
+    top: 70px;
+    width: 200px;
+    height: 80px;
+    padding-left: 60px;
+    font-size:28px;
+    font-weight: 650;
+    color: #283248;
+
+    
+}
+.bannerContainer{
+     position: relative;
+    left: 60px;
+    top: 70px;
+     overflow: hidden;
+    height: 202px;
+    width: 1160px;
+}
+.allBanners{
+    position: relative;
+    text-align: center;
+    display: flex;
+    gap: 30px;
+    transition: transform 0.5s ease; 
+}
+.banner{
+    position: relative;
+    flex: 0 0 auto;
+    width: 365px;
+    height: 202px;
+    background-size: cover;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.bannerImg{
+    width: 100%;
+
+}
+.typeTitle{
+    border-radius: 7px;
+    font-size: 15px;
+    position: absolute;
+    left: 290px;
+    top: 175px;
+    width: 66px;
+    height: 21px;
+    line-height: 21px;
+    color: #55553e;
+    background-color: #ffffff;
+    
+}
+#lastGroup{
+    
+    position: absolute;
+    top: 475px;
+    width: 46px;
+    height: 193px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: 0px 70px;
+    background-size: 40px;
+}
+#nextGroup{
+    
+    position: absolute;
+    top: 475px;
+    left: 1222px;
+    width: 46px;
+    height: 193px;
+   cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: 10px 70px;
+    background-size: 40px;
+}
+#lastGroup:hover{
+background-image: url(imgs/leftarrow.png);
+}
+#nextGroup:hover{
+    background-image: url(imgs/rightarrow2.png);
+}
+.rcmd{
+    display: none;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height:930px;
+    width: 1270px;
+}
+.rcmd.active{
+    display: block;
+}
+.featuredPage{
+    display: none;
+}
+.featuredPage.active{
+    display: block;
+}
+.likedMusicpage{
+    display: none;
+}
+.likedMusicpage.active{
+    display: block;
+}
+
+
+.options a{
+    display: inline-block;
+    text-align: center !important;
+}
+.options a:hover{
+    background-color:#f7f9fc ;
+}
+
+/*歌单广场分类*/
+.categories{
+    position: relative;
+    left:45px ;
+}
+.categories span{
+    display: inline-block;
+    height: 48px;
+    line-height: 48px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: #283248;
+    border: 1px solid #e2e5e9;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 330;
+    margin-left: 15px;
+    cursor: pointer
+}
+.categories span:hover{
+   background-color: #f8eaed;
+   border:1px solid #f8d8db;
+   color: #ff3a3a;
+}
+.categories span.active{
+     background-color: #f8eaed;
+   border:1px solid #f8d8db;
+   color: #ff3a3a;
+}
+.playlistCardsContainer{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative;
+    left: 61px;
+    top: 36px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    height: 874px;
+
+}
+.playlist{
+    position: relative;
+    width: 268px;
+    height: 346px;
+    cursor: pointer;
+    border-radius: 15px;
+    overflow: hidden;
+   
+}
+.playlistCardimg{
+    overflow: hidden;
+    width: 268px;
+}
+.playlistCardText{
+    padding: 5px 11px;
+    color: #ffffff;
+    font-size: 20px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.playCount2{
+    position: absolute;
+    padding-left: 19px;
+    top: 15px;
+    right: 20px;
+    color: white;
+    font-size: 21px;
+    font-weight: 600;
+    background-image: url(imgs/playcount.png);
+    background-repeat: no-repeat;
+    background-position:0px 9px;
+    
+    background-size: 16px;
+}
+
+
+
+
+
+
+
+
+.content{
+    display: block;
+}
+.playlistDetail{
+    display: none;
+    width: 1216px;
+    height: 991px;
+    
+    position: absolute;
+    left: 362px;
+    top: 130px;
+}
+.cover1{
+    width: 252px;
+    height: 252px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+.playlistName{
+   position: relative;
+   left: 286px;
+   top: -260px;
+   font-size: 31px;
+   font-weight: 600;
+   color: #283248;
+}
+.playlistDescription{
+    position: relative;
+    width: 824px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #4e576c;
+    font-size: 21px;
+    font-weight: 330;
+    left: 286px;
+    top: -247px;
+}
+.creator{
+    position: relative;
+    left: 286px;
+    top: -230px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.avatar{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.nicknameOfCreator{
+    font-size: 19px;
+    font-weight:250;
+    color: #4e576c;
+}
+.createTime{
+     font-size: 19px;
+    font-weight:250;
+    color: #8790a2;
+}
+.buttons{
+    position: relative;
+    display: flex;
+    gap: 18px;
+    left: 286px;
+    top: -170px;
+}
+.buttons span{
+    border: #d3dbe7 solid 1px;
+    padding: 18px;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;border-radius: 10px;
+    background-color: #e4e8ec;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position:19px 14px ;
+   
+     color: #3a4459;
+}
+#displayAll{
+    border: none;
+    color: white;
+    background-color: #fc3c50;
+    background-image: url(imgs/display1.png);
+    padding-left: 45px;
+}
+#collectCount{
+    background-image: url(imgs/collect.png);
+    padding-left: 45px;
+}
+#download{
+    background-image: url(imgs/download1.png);
+    padding-left: 45px;
+}
+.gqplscz{
+    position: relative;
+    top: -130px;
+    left: 5px;
+    display: flex;
+    gap: 58px;
+}
+.gqplscz span{
+    font-size: 27px;
+    color: #777f90;
+}
+#gq{
+    padding-bottom: 20px;
+    color: #283248;
+    font-weight: 600;
+     background-repeat: no-repeat;
+    background-size: 24px;
+    background-image: url(imgs/shortline.png);
+    background-position: 14px 32px;
+}
+
+
+/*歌单里的歌曲容器*/
+.songCardContainer{
+    
+    width: 1215px;
+    height: 629px;
+    position: relative;
+    top: -80px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.songCard{
+    
+    width: 1161px;
+    height: 85px;
+    
+    border:none;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.songCard:hover{
+    background-color: #ffffff;
+    background-image: url(imgs/display2.png);
+    background-repeat: no-repeat;
+    background-position:33px 33px ;
+    background-size: 20px;
+}
+.songImg{
+    position: relative;
+    left: 80px;
+    top: 16px;
+    width: 55px;
+    height: 55px;
+    border-radius: 7px;
+    overflow: hidden;
+}
+.songName{
+    position: relative;
+    left: 145px;
+    top: -45px;
+    font-size: 20px;
+    font-weight: 350;
+    color: #283248;
+}
+.singerName{
+    display: inline-block;
+    margin-left: 5px;
+    position: relative;
+    left: 140px;
+    top: -41px;
+    color: #7b818e;
+    font-size: 18px;
+}
+.albumName{
+    font-size: 20px;
+    font-weight: 300;
+    color: #515a6b;
+    position: relative;
+    left: 648px;
+    top: -80px;
+}
+#playlistPlaza{
+        padding-bottom: 20px;
+    color: #283248;
+    font-weight: 600;
+    
+     background-repeat: no-repeat;
+    background-size: 30px;
+    background-image: url(imgs/shortline.png);
+    background-position: 80px 32px;
+}
+
+
+
+.playerBar{
+    display: none;
+    z-index: 1000;
+    position: absolute;
+    bottom: 0px;
+    background-color: #ffffff;
+  
+    width: 1590px;
+    height: 123px;
+}
+.playerCover{
+    position: relative;
+    left: 40px;
+    top: 13px;
+    border: black solid 15px;
+    border-radius: 50%;
+    width: 62px;
+    height: 62px;
+}
+.playerName{
+    position: relative;
+    left:150px ;
+    top: -65px;
+    font-size: 24px;
+    color: #283248;
+    white-space: nowrap;
+    width: 115px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.playerSinger{
+    position: relative;
+    left: 150px;
+    top: -65px;
+    font-size: 20px;
+    font-weight: 200;
+}
+.displayPause{
+    position: relative;
+    left: 764px;
+    top: -130px;
+    width: 63px;
+    cursor: pointer;
+}
+.lastSong{
+    position: relative;
+    left: 629px;
+    top: -140px;
+    width: 45px;
+    cursor: pointer;
+}
+.nextSong{
+    position: relative;
+    left: 740px;
+    top: -140px;
+    width: 45px;
+    cursor: pointer;
+}
+.progressBar{
+    position: absolute;
+}
+#progressBar{
+   position: absolute;
+   width: 1584px;
+   top: -6px;
+   height: 4px;
+}
+.personalizedDjProgram{
+    display: flex;
+    gap: 24px;
+    position: relative
+}
+.Djcar{
+   width:214 ; 
+   height: 286;
+   background-color: #3a4459;
+}
+#lastPage{
+    cursor: pointer;
+   
+}
+#like{
+    position: absolute;
+    width: 35px;
+    top: 45px;
+    left: 268px;
+}
+#comment{
+    position: absolute;
+    width: 33px;
+    top: 45px;
+    left: 330px;
+}
+#circle{
+    position: absolute;
+    width: 37px;
+    top: 42px;
+    left: 635px;
+}
+#menu{
+    position: absolute;
+    width: 32px;
+    top: 43px;
+    left: 927px;
+}
