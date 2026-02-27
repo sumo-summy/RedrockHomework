@@ -1,0 +1,78 @@
+.lyricsPage{
+    display: none;
+background: linear-gradient(to bottom, #ffffff, rgb(255, 255, 255));
+    width: 1585px;
+    height: 1100px;
+    position: absolute;
+    bottom: 118px;
+    z-index: 50;
+}
+#backoffBtn{
+    position: absolute;
+    left: 50px;
+    top: 130px;
+    width: 40px;
+    height: 40px;
+    background-image: url(imgs/expand1.png);
+    background-repeat: no-repeat;
+    background-size: 38px;
+    background-position: 0px 0px;
+}
+
+#lyricsContainer {
+
+  width: 544px;
+  height: 606px;
+  position: absolute;
+  left: 796px;
+  top: 393px;
+  overflow-y: auto;
+  text-align: center;
+  padding: 10px 0;
+  box-sizing: border-box;
+  position: relative;
+}
+.lyric-item {
+  
+  padding: 20px 20px;
+  font-size: 30px;
+  color: #999;
+  transition: all 0.3s ease;
+
+  margin-top: 0px;
+}
+.lyric-item.active {
+  color: #646464;
+  font-size: 40px;
+  font-weight: bold;
+}
+#lyricsContainer::-webkit-scrollbar {
+  display: none;
+}
+#songNameoflrcPage{
+    padding-left: 0px;
+    text-align: center;
+    position: relative;
+   
+    font-size: 50px;
+    font-weight: 400;
+    color: #454545;
+}
+#singeroflrcPage{
+    padding-left: 0px;
+    text-align: center;
+    position: relative;
+
+    font-size: 30px;
+    font-weight:350;
+    color: #7c7c7c;
+}
+#wrap{
+  position: relative;
+  left: 270px;
+  top: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

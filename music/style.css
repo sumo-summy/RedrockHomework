@@ -167,20 +167,7 @@ a:hover{
 
 
 
-/*搜索框*/
-.searchBox{
-    background: linear-gradient(to right, #eef2ff, #fff3f8);
-    box-sizing: border-box;
-    width: 387px;
-    height: 54px;
-    border-radius: 12px;
-    margin-left: 8px;
-    position: relative;
-    top: -20px;
-    border: 2px solid #e0e7fb;
-    
-    
-}
+
 /*听歌识曲按钮*/
 .listen{
     margin-left: 9px;
@@ -291,12 +278,25 @@ a:hover{
 }
 .recommendedPlaylistCard{
    position: relative;
-    
+    cursor: pointer;
     width:175px ;
     height: 241px;
     
 
 }
+#refreshBtn{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 1117px;
+    top: 0px;
+    background-image: url(imgs/refresh.png);
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: 39px;
+    background-position:2px 2px ;
+}
+
 .recommendedPlaylistscontainer{
      position: relative;
     left: 60px;
@@ -651,7 +651,7 @@ background-image: url(imgs/leftarrow.png);
     background-image: url(imgs/display1.png);
     padding-left: 45px;
 }
-#collectCount{
+#subscribedCount{
     background-image: url(imgs/collect.png);
     padding-left: 45px;
 }
@@ -679,8 +679,34 @@ background-image: url(imgs/leftarrow.png);
     background-image: url(imgs/shortline.png);
     background-position: 14px 32px;
 }
+#songNum{
+    position: absolute;
+    left: 55px;
+    font-size: 15px;
+    font-weight: 800;
+    color: #283248;
 
-
+}
+.singCardTitle{
+    position: absolute;
+    color: #788090;
+    font-size: 20px;
+    font-weight: 300;
+    top: 390px;  
+}
+#num{
+  left: 35px;
+  
+}
+#biaoti{
+left: 75px;
+}
+#xihuan{
+    left: 980px;
+}
+#zhuanji{
+    left: 640px;
+}
 /*歌单里的歌曲容器*/
 .songCardContainer{
     
@@ -692,7 +718,7 @@ background-image: url(imgs/leftarrow.png);
     overflow-x: hidden;
 }
 .songCard{
-    
+    position: relative;
     width: 1161px;
     height: 85px;
     
@@ -707,6 +733,17 @@ background-image: url(imgs/leftarrow.png);
     background-repeat: no-repeat;
     background-position:33px 33px ;
     background-size: 20px;
+
+}
+.songNum{
+    position: absolute;
+    left: 28px;
+    top: 28px;
+    font-size:20px;
+    color: #9da2ad;
+}
+.songCard:hover .songNum{
+    display: none;
 }
 .songImg{
     position: relative;
@@ -741,6 +778,23 @@ background-image: url(imgs/leftarrow.png);
     position: relative;
     left: 648px;
     top: -80px;
+    width: 312px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.heart{
+    
+    position: absolute;
+    left: 974px;
+    top: 20px;
+    background-image: url(imgs/like.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: 10px ;
+    width: 40px;
+    height: 40px;
+    
 }
 #playlistPlaza{
         padding-bottom: 20px;
@@ -757,7 +811,7 @@ background-image: url(imgs/leftarrow.png);
 
 .playerBar{
     display: none;
-    z-index: 1000;
+    z-index: 100;
     position: absolute;
     bottom: 0px;
     background-color: #ffffff;
@@ -766,18 +820,20 @@ background-image: url(imgs/leftarrow.png);
     height: 123px;
 }
 .playerCover{
-    position: relative;
+
+   position: absolute;
     left: 40px;
-    top: 13px;
+    top: 15px;
     border: black solid 15px;
     border-radius: 50%;
     width: 62px;
     height: 62px;
 }
 .playerName{
-    position: relative;
+
+    position: absolute;
     left:150px ;
-    top: -65px;
+    top: 24px;
     font-size: 24px;
     color: #283248;
     white-space: nowrap;
@@ -786,41 +842,73 @@ background-image: url(imgs/leftarrow.png);
     text-overflow: ellipsis;
 }
 .playerSinger{
-    position: relative;
-    left: 150px;
-    top: -65px;
+    left:56px;
+    position: absolute;
+   left: 150px;
+    top: 60px;
     font-size: 20px;
     font-weight: 200;
 }
 .displayPause{
-    position: relative;
+    position: absolute;
     left: 764px;
-    top: -130px;
+    top: 30px;
     width: 63px;
     cursor: pointer;
 }
 .lastSong{
-    position: relative;
-    left: 629px;
-    top: -140px;
+    position: absolute;
+    left: 700px;
+    top: 37px;
     width: 45px;
     cursor: pointer;
 }
 .nextSong{
     position: relative;
-    left: 740px;
-    top: -140px;
+    left: 845px;
+    top: 13px;
     width: 45px;
     cursor: pointer;
 }
-.progressBar{
-    position: absolute;
-}
-#progressBar{
+
+#progressBar {
    position: absolute;
-   width: 1584px;
-   top: -6px;
-   height: 4px;
+   top: -18px;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 4px;
+  background: #e7e9ea;
+  border-radius: 2px;
+  position: relative;
+  transform: translateZ(0);
+  will-change: contents;
+}
+
+#progressBar::before {
+  content: '';
+  display: block;
+  width: var(--progress, 0%);
+  height: 100%;
+  background: #f6707e;
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: width 0.05s linear;
+}
+
+#progressBar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  transform: translateZ(0);
+  touch-action: manipulation;
 }
 .personalizedDjProgram{
     display: flex;
@@ -835,6 +923,9 @@ background-image: url(imgs/leftarrow.png);
 #lastPage{
     cursor: pointer;
    
+}
+#lastPage:hover{
+background-color: #e2e5e9;
 }
 #like{
     position: absolute;

@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>冈易云音乐</title>
+  <title>Document</title>
    <link rel="stylesheet" type="text/css" href="style.css">
+   <link rel="stylesheet" type="text/css" href="song.css">
+   <link rel="stylesheet" type="text/css" href="search.css">
 </head>
 <body>
   <div class="page">
@@ -29,6 +31,7 @@
          </div>
          <div class="Header" >
           <button class="return" id="lastPage"></button>
+          <div class="searchBtn"></div>
           <input type="text" class="searchBox">
           <button class="listen"></button>
 
@@ -53,6 +56,7 @@
 
         </div>
         <div id="rcmdPlaylists">推荐歌单</div>
+        <div id="refreshBtn"></div>
         <div class="recommendedPlaylistscontainer">
         
 
@@ -108,21 +112,25 @@
   </div>
   <div class="buttons">
     <span id="displayAll">播放全部</span>
-    <span id="collectCount">7527</span>
+    <span id="subscribedCount">7527</span>
     <span id="download">下载</span>
     <span>...</span>
   </div>
   <div class="gqplscz">
     <span id="gq">歌曲</span>
+    <span id="songNum">124</span>
     <span>评论</span>
     <span>收藏者</span>
   </div>
-
+<div id="num" class="singCardTitle">#</div>
+<div id="biaoti" class="singCardTitle">标题</div>
+<div id="zhuanji" class="singCardTitle">专辑</div>
+<div id="xihuan" class="singCardTitle">喜欢</div>
   <div class="songCardContainer">
     
   </div>
 </div>
- <div class="playerBar">
+ <div class="playerBar" id="">
     
    <input id="progressBar" type="range" min="0" max="100" value="0" style="width: 1584px;">
  
@@ -137,7 +145,35 @@
   <img src="imgs/circle.png" id="circle">
   <img src="imgs/menu.png" id="menu">
  </div>
+ <div class="lyricsPage">
+  <div id="backoffBtn"></div>
+  <div id="wrap">
+  <div id="songNameoflrcPage">aaaaa</div>
+  <div id="singeroflrcPage">bbbb</div>
   </div>
-  <script src="js.js" ></script>
+  <div id="lyricsContainer"></div>
+ </div>
+ <div class="searchPage">
+  <div class="keywordsBox">关键词</div>
+  <div class="searchResults">
+    <span id="zonghe">综合</span>
+    <span>单曲</span>
+    <span>歌单</span>
+    <span>播客</span>
+    <span>专辑</span>
+    <span>歌手</span>
+    <span>MV</span>
+    <span>用户</span>
+    <span>歌词</span>
+    <span>声音</span>
+  </div>
+  <div class="singerCardContainer"></div>
+ </div>
+  </div>
+  <script src="menu.js" ></script>
+  <script src="playlist.js"></script>
+  <script src="recommend.js"></script>
+  <script src="song.js"></script>
+  <script src="search.js"></script>
 </body>
 </html>

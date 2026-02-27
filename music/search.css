@@ -1,0 +1,90 @@
+/*搜索框*/
+.searchBox{
+    background: linear-gradient(to right, #eef2ff, #fff3f8);
+    box-sizing: border-box;
+    width: 387px;
+    height: 54px;
+    border-radius: 12px;
+    margin-left: 8px;
+    position: relative;
+    top: -20px;
+    border: 2px solid #e0e7fb;
+    padding-left: 45px;
+    font-size: 20px;
+    color: #898989;
+}
+.searchBtn{
+    width:30px ;
+    height: 40px;
+    position: absolute;
+    cursor: pointer;
+    left: 125px;
+    top: 33px;
+    z-index: 1;
+    background-image: url(imgs/search1.png);
+    background-repeat: no-repeat;
+    background-size: 35px;
+    background-position: 0px 0px;
+}
+.searchBtn:hover{
+    background-image: url(imgs/search2.png);
+}
+.searchPage{
+    display: none;
+    background-color: #f7f9fc;
+    width: 1216px;
+    height: 991px;
+    z-index: 2;
+    position: absolute;
+    left: 350px;
+    top: 130px;
+}
+.keywordsBox{
+    color: #283248;
+    font-size: 32px;
+    font-weight: 760;
+    margin-bottom: 30px;
+}
+.searchResults{
+    margin-top: 10px;
+}
+.searchResults span{
+    padding-right:31px;
+    font-size: 24px;
+    color: #7b8290;
+    font-weight: 350;
+    padding-bottom: 10px;
+}
+#zonghe{
+    color: #283248;
+    font-weight: 700;
+    background-image: url(imgs/shortline.png);
+    background-repeat: no-repeat;
+    background-position: 10px 25px;
+    background-size: 28px;
+}
+.singerCardContainer{
+    margin-top: 56px;
+}
+.singerCard{
+    width: 569px;
+    height:126px ;
+    border-radius: 20px;
+}
+.singerCard:hover{
+    background-color: white;
+    box-shadow: #f2f2f2 4px 4px;
+}
+.singerCardImg{
+    width: 96px;
+    height: 96px;
+    position: relative;
+    left: 20px;
+    top: 20px;
+    border-radius: 50%;
+}
+.singerNameResult{
+    position: relative;
+    left: 130px;
+    top: -60px;
+}
